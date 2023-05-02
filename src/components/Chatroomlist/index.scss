@@ -1,0 +1,33 @@
+.avatar{
+    @keyframes playFrames {
+		0% {
+			background-position: 0px 0px;
+		}
+		25% {
+			background-position: -64px 0px;
+		}
+		50% {
+			background-position: -128px 0px;
+		}
+		75% {
+			background-position: -192px 0px;
+		}
+	  }
+	
+    .pokemonProfile{
+      margin: 0px;
+        position: relative;
+        display: inline-block;
+      background-repeat: "no-repeat";
+      left:0px;
+      top:0px;
+ 
+      background-position:  0px 0px;
+      width: 64px;
+      height: 64px;
+      &:hover{
+    
+    animation: playFrames .5s step-start infinite;
+  }
+  }
+}

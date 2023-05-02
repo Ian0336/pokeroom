@@ -1,0 +1,94 @@
+.avatar{
+    @keyframes goDown {
+		0% {
+			background-position: 0px 0px;
+		}
+		25% {
+			background-position: -64px 0px;
+		}
+		50% {
+			background-position: -128px 0px;
+		}
+		75% {
+			background-position: -192px 0px;
+		}
+	  }
+    @keyframes goLeft {
+      0% {
+        background-position: 0px -64px;
+      }
+      25% {
+        background-position: -64px -64px;
+      }
+      50% {
+        background-position: -128px -64px;
+      }
+      75% {
+        background-position: -192px -64px;
+      }
+      }
+    @keyframes goRight {
+      0% {
+        background-position: 0px -128px;
+      }
+      25% {
+        background-position: -64px -128px;
+      }
+      50% {
+        background-position: -128px -128px;
+      }
+      75% {
+        background-position: -192px -128px;
+      }
+    }
+    
+    @keyframes  goUp{
+      0% {
+        background-position: 0px -192px;
+      }
+      25% {
+        background-position: -64px -192px;
+      }
+      50% {
+        background-position: -128px -192px;
+      }
+      75% {
+        background-position: -192px -192px;
+      }
+    }
+    .pokemonWalk{
+        z-index: 1;
+        position: absolute;
+      background-repeat: "no-repeat";
+      left:0px;
+      top:0px;
+        transform: translate(0px, 0px);
+    
+      transform: scale(.35);
+      transform-origin: top;
+      background-position:  0px 0px;
+      width: 64px;
+      height: 64px;
+      -webkit-transition: all .5s linear;  /* Safari 和 Chrome */
+  -moz-transition: all .5s linear;     /* Firefox */
+  -ms-transition: all .5s linear;      /* IE */
+  transition: all .5s linear;          /* 標準 */
+ 
+      &.goLeft{
+        background-position:  0px -64px;
+        animation: goLeft .8s step-start infinite;
+      }
+      &.goRight{
+        background-position:  0px -128px;
+        animation: goRight .8s step-start infinite;
+      }
+      &.goUp{
+        background-position:  0px -192px;
+        animation: goUp .8s step-start infinite;
+      }
+      &.goDown{
+        background-position:  0px 0px;
+        animation: goDown .8s step-start infinite;
+      }
+  }
+}

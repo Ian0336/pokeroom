@@ -1,0 +1,60 @@
+.avatar{
+    @keyframes playFrames {
+		0% {
+			background-position: 0px 0px;
+		}
+		25% {
+			background-position: -64px 0px;
+		}
+		50% {
+			background-position: -128px 0px;
+		}
+		75% {
+			background-position: -192px 0px;
+		}
+	  }
+	.pokemonAvatar{
+        background-repeat: "no-repeat";
+        position: absolute;
+        transform: scale(0.5);
+        transform-origin: top ;
+        background-position:  0px 0px;
+        width: 64px;
+        height: 64px;
+        &:hover{
+			
+			animation: playFrames .5s step-start infinite;
+		}
+    }
+    .myPokemonAvatar{
+      background-repeat: "no-repeat";
+      position: absolute;
+      transform: scale(0.5);
+      transform-origin: left top;
+      background-position:  0px 0px;
+      width: 64px;
+      height: 64px;
+      &:hover{
+    
+    animation: playFrames .5s step-start infinite;
+  }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+    .chatroomSize {
+      font-size:.9rem!important;
+    }
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .chatroomSize {
+      font-size: 1rem!important;
+    }
+  }
+
+  @media only screen and (min-width: 1025px) {
+    .chatroomSize {
+      font-size: 1.25rem!important;
+    }
+  }
