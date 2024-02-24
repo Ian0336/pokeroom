@@ -29,85 +29,76 @@
 
 ### How to use
 
-#### 登入
+#### Login
 
-首先登入和註冊帳號就和一般的一樣。然後可以在註冊帳號的時候選擇想要的頭像(並不能自己上傳)。登入的部分還可以使用 GOOGLE 登入，如果是第一次登入會讓你填寫資料。
+To begin, login and account registration are similar to usual. During registration, you can select a desired avatar (uploading your own is not allowed). Additionally, you can log in using your Google account. If it's your first time logging in, you will be prompted to fill out some information.
 
-登入後
+After Logging In
 ![](https://i.imgur.com/WdM4fUh.png)
-預設的房間是 Lobby 大家都會在裡面且不能退出。然後可以開始聊天。
-畫面中的寶可夢是會動(CSS 動畫)的他們代表在這個房間的人，可以將滑鼠一上去看是代表誰。
+The default room is "Lobby," where everyone gathers and cannot leave. You can start chatting here. The Pokémon characters on the screen are animated using CSS animations and represent the people in the room. Hovering over them with the mouse will display the respective user's information.
 
 #### RWD
 
 ![](https://i.imgur.com/rCLPxTc.png)
 ![](https://i.imgur.com/FLs4jSJ.png)
 
-當畫面太小會將左邊的欄位縮小到右上的按鈕。
+When the screen size is too small, the left column will shrink into a button at the top right corner.
 
-#### 新增房間
+#### Adding a Room
 
 ![](https://i.imgur.com/HCDOXLl.png)
-按 Lobby 上方的加號可以新增房間，也可以加入房間(只能加入公開的)
+Clicking the plus icon above "Lobby" allows you to add a room or join an existing one (only public rooms can be joined).
 ![](https://i.imgur.com/zEB6fwn.png)
-右上角的按鈕分別為加別人進來，及退出房間。
+The buttons at the top right corner are for inviting others and exiting the room.
 
-#### 設定
+#### Settings
 
 ![](https://i.imgur.com/6gowXoA.png)
-右上角的設定按鈕可以設定主題顏色，及更改資料(名字和寶可夢)。還有登出。
+The settings button at the top right corner allows you to adjust theme colors, edit your profile (name and Pokémon), and log out.
 
-#### Google 通知
+#### Google Notifications
 
 ![](https://i.imgur.com/Sj9yStu.png)
-若你當前的聊天室有別人傳訊息，就會收到通知。(**請助教允許 chrome 傳送通知**)
+You will receive notifications if someone messages you in the current chat room. (Please allow Chrome to send notifications)
 
 ### Function description
 
 #### Profile Picture
 
-我不確定是不是一定要可以上傳自己的照片，但因為我有做相關動畫所以只能選擇我提供的寶可夢們。
+I'm not sure if uploading custom photos is allowed, but due to the animations I've implemented, you can only choose from the Pokémon avatars provided.
 
 #### Send image
 
 ![](https://i.imgur.com/D09kKDq.png)
-最上面那個是傳送圖片
+The top button is for sending images.
 ![](https://i.imgur.com/xtr5iHv.png)
-選定圖片後要 send。
+After selecting an image, click "send".
 ![](https://i.imgur.com/HLiTj99.png)
 
 #### ChatBox
 
-我是串接 openai 的 text-davinci-003 模型。
+I'm using the OpenAI text-davinci-003 model.
 
 ![](https://i.imgur.com/D09kKDq.png)
-使用方法是先按圖片中的 android 商標
+To use it, click on the Android logo as shown in the image.
 ![](https://i.imgur.com/fk64Rl2.png)
-之後會變顏色。
-再來在輸入框打字後傳出
+The logo will change color.
+Then, type your message in the input box and send.
 ![](https://i.imgur.com/Bf5tubi.png)
-圖中所謂的多邊獸就是我的機器人。(因為有 TOKEN 的限制所以有時候可能會講一半)
+The creature referred to in the image is my chatbot. (Due to token restrictions, it may sometimes cut off.)
 
 #### Send gif from Tenor API
 
 ![](https://i.imgur.com/D09kKDq.png)
-按傳送圖片下方的圖示
+Click the icon below "send image".
 ![](https://i.imgur.com/zKfWR3W.png)
-會跳出收尋框
-點擊之後就可以直接傳送出去了
+A search box will appear.
+After clicking on a GIF, you can send it directly.
+
 ![](https://i.imgur.com/g7xqr9Q.png)
 
 ### Firebase page link
 
 [我的 Pokeroom](https://chatroom-d8254.web.app/)
 
-### Others (Optional)
 
-希望助教們使用 GOOGLE CHROME 可以有最好的體驗。
-謝謝助教><
-
-<style>
-table th{
-    width: 100%;
-}
-</style>
